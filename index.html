@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/slider.css">
+    <style>
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .container {
+            width: 80%;
+        }
+    </style>
+    <title>Slider Component</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="slider">
+                <div class="slider-item" style="background-color: aquamarine;"></div>
+                <div class="slider-item active" style="background-color: salmon;"></div>
+                <div class="slider-item" style="background-color: bisque;"></div>
+                <div class="slider-item" style="background-color:blueviolet;"></div>
+                <div class="slider-item" style="background-color:rgb(226, 43, 186);"></div>
+                <ol class="slide-indicators">
+                    <li class="slide-indicator"></li>
+                    <li class="slide-indicator"></li>
+                    <li class="slide-indicator"></li>
+                    <li class="slide-indicator"></li>
+                    <li class="slide-indicator"></li>
+                </ol>
+                <span class="slider-control-prev" role="button">
+                    <img aria-hidden="true" src="img/prev.svg" alt="Previous Slide Button">
+                </span>
+                <span class="slider-control-next" role="button">
+                    <img aria-hidden="true" src="img/next.svg" alt="Next Slide Button">
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/slider.js"></script>
+</body>
+</html>
